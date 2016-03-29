@@ -4,23 +4,30 @@ $(document).ready(function() {
     // when you *click* email
     $(".email").focus(function() {
         // change css property *background* to black
-        $(this).css("background", "STEP 6")
+        $(this).css("background", "black")
         // change css proeprty *color* to yellow
-        $(this).css("STEP 6", "yellow");
+        $(this).css("color", "yellow");
     });
 
     // STEP 7
     // When you hover over jumbotron
-    $("").click(function() {
+    $(".jumbotron").hover(function() {
         // STEP 8
         // change background to an image
         // don't forget to google if you don't know how to do this
-        $(this).css("", "");
+        $(this).css("background-image", "url('http://cdn.history.com/sites/2/2013/12/new-york-city-H.jpeg')");
     })
 
     // STEP 9
-    // select columns 
-        // on mouseover header and pargraph turns blue 
+    $(".col-md-4").mouseenter(function(){
+        $(this).css("p", "blue")
+    });
+     
+     $(".col-md-4").mouseout(function(){
+        $(this).css("p", "red")
+    });
+    
+       
         // on mouseout  header and pargraph turns red
 
     // STEP 10
